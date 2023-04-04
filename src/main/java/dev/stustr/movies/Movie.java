@@ -26,4 +26,17 @@ public class Movie {
     private List<String> backdrops;
     @DocumentReference
     private List<Review> reviewIds;
+
+    public Movie(String imdbId, String title,
+                 String releaseDate, String trailerURL,
+                 String poster, List<String> genres,
+                 List<String> backdrops) {
+        this.imdbId = imdbId;
+        this.title = title;
+        this.releaseDate = releaseDate;
+        this.trailerURL = trailerURL;
+        this.poster = poster;
+        this.genres = genres;
+        this.backdrops = backdrops;
+    }
 }
