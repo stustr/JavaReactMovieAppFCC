@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc78d682-ecbd-42b3-8956-1ed3995994e5" name="Changes" comment="Review, ReviewController, ReviewRepository, ReviewService initialised &amp; post method working">
+      <change beforePath="$PROJECT_DIR$/viteMoviesJavaReact/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/viteMoviesJavaReact/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viteMoviesJavaReact/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/viteMoviesJavaReact/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viteMoviesJavaReact/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/viteMoviesJavaReact/src/App.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Struan &lt;60407763+stustr@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2NuaSxQS9iO94cHypSIe16i2QBn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/sfbs/Programming/freeCodeCamp/javaMovieProject/movies",
+    "settings.editor.selected.configurable": "preferences.keymap"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc78d682-ecbd-42b3-8956-1ed3995994e5" name="Changes" comment="" />
+      <created>1680516424999</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680516424999</updated>
+    </task>
+    <task id="LOCAL-00001" summary=":tada Initial Commit">
+      <created>1680526111383</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680526111383</updated>
+    </task>
+    <task id="LOCAL-00002" summary=":tada: Initial Commit">
+      <created>1680527851339</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680527851339</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added MovieController, MovieRepository, MovieService">
+      <created>1680529319181</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680529319181</updated>
+    </task>
+    <task id="LOCAL-00004" summary="DB data loading via controller">
+      <created>1680530063982</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680530063982</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Search by Imdb id enabled">
+      <created>1680606797710</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680606797710</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Review, ReviewController, ReviewRepository, ReviewService initialised &amp; post method working">
+      <created>1680613304564</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680613304564</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value=":tada Initial Commit" />
+    <MESSAGE value=":tada: Initial Commit" />
+    <MESSAGE value="Added MovieController, MovieRepository, MovieService" />
+    <MESSAGE value="DB data loading via controller" />
+    <MESSAGE value="Search by Imdb id enabled" />
+    <MESSAGE value="Review, ReviewController, ReviewRepository, ReviewService initialised &amp; post method working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Review, ReviewController, ReviewRepository, ReviewService initialised &amp; post method working" />
+  </component>
+</project>
