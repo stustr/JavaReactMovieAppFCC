@@ -1,8 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import api from "./api/axiosConfig";
-import { useEffect } from "react";
 import Layout from "./components/Layout";
 import Home from "./components/home/Home";
 
@@ -27,7 +26,10 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home movies={movies} />}></Route>
+          <Route
+            path="/"
+            element={movies ? <Home movies={movies} /> : <p>Loading...</p>}
+          />
         </Route>
       </Routes>
     </div>
