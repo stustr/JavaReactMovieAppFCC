@@ -2,7 +2,6 @@ import { useRef } from "react";
 import api from "../../api/axiosConfig.js";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-import { loadEnv } from "vite";
 
 const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
   const revText = useRef();
@@ -33,52 +32,52 @@ const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
   };
 
   return (
-    <Container>
-      <Row>
-        <Col>
+    <table className="table-auto">
+      <tr>
+        <th>
           <h3>Reviews</h3>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
+        </th>
+      </tr>
+      <tr>
+        <th>
           <img src={movie?.poster} alt="" />
-        </Col>
-        <Col>
+        </th>
+        <th>
           {
             <>
-              <Row>
-                <Col>
+              <tr>
+                <th>
                   <ReviewForm
                     handleSubmit={addReview}
                     revText={revText}
                     labelText="Write a review?"
                   ></ReviewForm>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
+                </th>
+              </tr>
+              <tr>
+                <th>
                   <hr />
-                </Col>
-              </Row>
+                </th>
+              </tr>
             </>
           }
           {reviews?.map((r) => {
             return (
               <>
-                <Row>
-                  <Col>{r.body}</Col>
-                </Row>
-                <Row>
-                  <Col>
+                <tr>
+                  <th>{r.body}</th>
+                </tr>
+                <tr>
+                  <th>
                     <hr />
-                  </Col>
-                </Row>
+                  </th>
+                </tr>
               </>
             );
           })}
-        </Col>
-      </Row>
-    </Container>
+        </th>
+      </tr>
+    </table>
   );
 };
 export default Reviews;
