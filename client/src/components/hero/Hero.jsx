@@ -7,17 +7,13 @@ const Hero = ({ movies }) => {
       <Carousel>
         {movies.map((movie) => {
           return (
-            <Paper>
+            <Paper key={movie.id}>
               <div>
                 <div>
-                  <div>
-                    <div>
-                      <img src={movie.poster} alt="" />
-                    </div>
-                    <div>
-                      <h4>{movie.title} </h4>
-                    </div>
-                  </div>
+                  <img src={movie.poster} alt="" />
+                </div>
+                <div>
+                  <h4>{movie.title} </h4>
                 </div>
               </div>
             </Paper>
