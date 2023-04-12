@@ -25,7 +25,7 @@ function App() {
       const response = await api.get(`api/v1/movies/${movieId}`);
       const singleMovie = response.data;
       setMovie(singleMovie);
-      setReviews(singleMovie.reviews);
+      setReviews(singleMovie.reviewIds);
       setLoading(false);
     } catch (error) {
       console.error(error);
@@ -40,7 +40,7 @@ function App() {
     <Routes>
       <Route
         path="/"
-        element={movies ? <Home movies={movies} /> : <p>Loading...</p>}
+        element={movies ? <Home className="flex-col align-middle justify-center" movies={movies} /> : <p>Loading...</p>}
       />
       <Route
         path="/Reviews/:movieId"
@@ -49,6 +49,7 @@ function App() {
             getMovieData={getMovieData}
             reviews={reviews}
             setReviews={setReviews}
+            movie={movie}
           />
         }
       />
