@@ -1,7 +1,7 @@
-import { useRef } from "react";
-import api from "../../api/axiosConfig.js";
+import { useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
+import api from "../../api/axiosConfig.js";
+import ReviewForm from "../reviewForm/ReviewForm.jsx";
 
 const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
   const revText = useRef();
@@ -32,52 +32,21 @@ const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
   };
 
   return (
-    <table className="table-auto">
-      <tr>
-        <th>
-          <h3>Reviews</h3>
-        </th>
-      </tr>
-      <tr>
-        <th>
-          <img src={movie?.poster} alt="" />
-        </th>
-        <th>
-          {
-            <>
-              <tr>
-                <th>
-                  <ReviewForm
-                    handleSubmit={addReview}
-                    revText={revText}
-                    labelText="Write a review?"
-                  ></ReviewForm>
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  <hr />
-                </th>
-              </tr>
-            </>
-          }
-          {reviews?.map((r) => {
-            return (
-              <>
-                <tr>
-                  <th>{r.body}</th>
-                </tr>
-                <tr>
-                  <th>
-                    <hr />
-                  </th>
-                </tr>
-              </>
-            );
+    <>
+      {movie ? (
+        <>
+          <h3 className="font-bold ">{movie.title}</h3>
+          <ReviewForm handleSubmit={addReview} revText={revText}/>
+          <p>Reviews:</p>
+          {reviews.map((review) => {
+            return <p key={review.id}>{review.body}</p>;
           })}
-        </th>
-      </tr>
-    </table>
+        </>
+      ) : (
+        <p>Loading...</p>
+      )}
+    </>
   );
 };
+
 export default Reviews;
